@@ -1,61 +1,92 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏠 Projeto Interdisciplinar - Sistema Web para Escritório de Design de Interiores
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este é um projeto interdisciplinar desenvolvido no 2º semestre do curso de **Análise e Desenvolvimento de Sistemas**. O sistema tem como objetivo atender às necessidades de gerenciamento de um **escritório de design de interiores**, facilitando o cadastro de clientes, controle de projetos, agendamento de visitas e organização de orçamentos.
 
-## About Laravel
+## 🚀 Tecnologias Utilizadas
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **PHP**: Linguagem de programação server-side.
+- **Laravel**: Framework PHP moderno para desenvolvimento ágil e seguro.
+- **MySQL**: Sistema de gerenciamento de banco de dados relacional.
+- **HTML/CSS**: Para estrutura e estilização das páginas.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🎯 Objetivos do Sistema
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Cadastrar e gerenciar clientes e projetos de design.
+- Armazenar informações sobre cada projeto.
+- Interface simples, responsiva e de fácil uso.
 
-## Learning Laravel
+## 📁 Estrutura do Projeto
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+/projeto-design-interiores
+│
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+├── app/ # Lógica do backend Laravel (Models, Controllers, etc.)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+├── database/ # Migrações e seeds do banco de dados
 
-## Laravel Sponsors
+├── public/ # Arquivos acessíveis ao público (imagens, CSS, PHP)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+├── resources/ # Views (Blade), assets e arquivos de tradução
 
-### Premium Partners
+├── routes/ # Definição das rotas da aplicação
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
+├── .env # Variáveis de ambiente (configurações locais)
 
-## Contributing
+└── README.md # Este arquivo
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+## 🔧 Como Executar o Projeto
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Pré-requisitos:
+- PHP >= 8.1
+- Composer
+- MySQL
+- Laravel CLI
 
-## Security Vulnerabilities
+### Passos:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/projeto-design-interiores.git
 
-## License
+# Acesse a pasta do projeto
+cd projeto-design-interiores
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Instale as dependências do Laravel
+composer install
+
+# Copie o arquivo de configuração de ambiente
+cp .env.example .env
+
+# Configure o banco de dados no arquivo .env
+
+# Gere a chave da aplicação
+php artisan key:generate
+
+# Execute as migrações do banco de dados
+php artisan migrate
+
+# Inicie o servidor local
+php artisan serve
+```
+
+## 📚 Disciplinas Envolvidas
+
+Este projeto integra conhecimentos adquiridos nas seguintes disciplinas:
+
+- **Sistemas de Informação**
+- **Engenharia de Software I**
+- **Linguagem de Programação**
+
+## 👨‍💻 Equipe
+
+- Adriana Leite
+- Luidy Souza
+- Mateus Rezende
+- Rafael Magalhães Ramos
+- Ricardo
+- Victor Gabriel Feitosa
+
+## 📄 Licença
+
+Este projeto é de uso **acadêmico**, desenvolvido para fins educacionais e sem fins comerciais.

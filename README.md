@@ -6,7 +6,7 @@ Este é um projeto interdisciplinar desenvolvido no 2º semestre do curso de **A
 
 - **PHP**: Linguagem de programação server-side.
 - **Laravel**: Framework PHP moderno para desenvolvimento ágil e seguro.
-- **MySQL**: Sistema de gerenciamento de banco de dados relacional.
+- **SQLlite**: Sistema de gerenciamento de banco de dados relacional.
 - **HTML/CSS**: Para estrutura e estilização das páginas.
 
 ## 🎯 Objetivos do Sistema
@@ -20,17 +20,25 @@ Este é um projeto interdisciplinar desenvolvido no 2º semestre do curso de **A
 /projeto-design-interiores
 │
 
-├── app/ # Lógica do backend Laravel (Models, Controllers, etc.)
+├── app/           # Código principal da aplicação (models, controllers, etc.)
 
-├── database/ # Migrações e seeds do banco de dados
+├── bootstrap/     # Arquivo de inicialização e cache
 
-├── public/ # Arquivos acessíveis ao público (imagens, CSS, PHP)
+├── config/        # Arquivos de configuração
 
-├── resources/ # Views (Blade), assets e arquivos de tradução
+├── database/      # Migrations, seeders, factories e banco SQLite
 
-├── routes/ # Definição das rotas da aplicação
+├── public/        # Arquivos públicos acessados via navegador
 
-├── .env # Variáveis de ambiente (configurações locais)
+├── resources/     # Views Blade, arquivos front-end e traduções
+
+├── routes/        # Definições de rotas (web, api, etc.)
+
+├── storage/       # Logs, cache, uploads e arquivos temporários
+
+├── tests/         # Testes unitários e funcionais
+
+├── vendor/        # Dependências geradas pelo Composer
 
 └── README.md # Este arquivo
 

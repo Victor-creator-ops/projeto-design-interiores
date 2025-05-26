@@ -269,9 +269,22 @@
                 </div>
             </main>
         </div>
+    
+        @auth
+            <div class="text-center bg-white p-10 rounded shadow-md">
+                <h1 class="text-3xl font-bold mb-4">Bem-vindo, {{ Auth::user()->name }}!</h1>
+                <p class="text-gray-600">Você está logado no sistema.</p>
 
-        @if (Route::has('login'))
+                <!-- Botão de logout -->
+                <form action="{{ route('logout') }}" method="POST" class="mt-6">
+                    @csrf
+                    <button type="submit" class="bg-red-500 text-black px-4 py-2 rounded hover:bg-red-600">
+                        Sair
+                    </button>
+                </form>
+            </div>
+
             <div class="h-14.5 hidden lg:block"></div>
-        @endif
+        @endauth
     </body>
 </html>

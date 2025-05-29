@@ -26,3 +26,5 @@ Route::get('/welcome', function () {
 })->middleware('auth')->name('welcome');
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+// Teste de commit Ricardo. 

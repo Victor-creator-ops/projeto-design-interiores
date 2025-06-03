@@ -92,7 +92,7 @@ Este projeto integra conhecimentos adquiridos nas seguintes disciplinas:
 - Luidy Souza
 - Mateus Rezende
 - Rafael Magalhães Ramos
-- Ricardo
+- Ricardo Horikawa
 - Victor Gabriel Feitosa
 
 ## 📄 Licença

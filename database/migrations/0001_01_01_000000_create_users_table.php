@@ -20,8 +20,7 @@ return new class extends Migration
             $table->string('document');
             $table->string('company_name');
             $table->date('birth');
-            $table->string('telephone');
-            $table->char('permission');
+            $table->boolean('permission');
             $table->rememberToken();
             $table->timestamps();
         });

@@ -29,7 +29,6 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'document' => fake()->numberBetween(11, 11),
-            'telephone' => fake()->phoneNumber(),
             'birth' => fake()->dateTimeThisCentury(),
             'company_name' => fake()->lastName(),
             'permission' => fake()->randomElement(array: ['c', 'f']),

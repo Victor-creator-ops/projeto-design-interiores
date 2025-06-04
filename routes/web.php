@@ -27,4 +27,4 @@ Route::get('/welcome', function () {
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-// Novo Teste de commit Ricardo.
+// Novo gitTeste de commit Ricardo.

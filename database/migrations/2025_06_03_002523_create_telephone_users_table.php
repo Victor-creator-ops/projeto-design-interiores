@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('telephone_users', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->usignedBigInteger('user_id');
+            $table->integer('user_id');
             $table->foreign('user_id')->references('id')->on('users');
         });
     }

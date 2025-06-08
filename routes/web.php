@@ -26,3 +26,15 @@ Route::get('/welcome', function () {
 })->middleware('auth')->name('welcome');
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('/tasks', function () {
+    return view('tasks');
+})->name('tasks');
+
+Route::get('/projetos', function () {
+    return view('projetos');
+})->name('projetos');
+
+Route::get('/solicitacoes', function () {
+    return view('solicitacoes');
+})->name('solicitacoes');

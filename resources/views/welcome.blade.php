@@ -285,6 +285,21 @@
             </div>
 
             <div class="h-14.5 hidden lg:block"></div>
+            <div class="container text-center mt-5">
+        <h1>Bem-vindo ao Sistema de Design de Interiores</h1>
+
+        <div class="mt-4">
+            <!-- Botão para criar projeto -->
+            <a href="{{ route('projetos.create') }}" class="btn btn-primary me-2">
+                Criar Novo Projeto
+            </a>
+
+            <!-- Botão para visualizar um projeto -->
+            <a href="{{ route('projetos.show', ['id' => 1]) }}" class="btn btn-success">
+                Visualizar Projeto (ID 1)
+            </a>
+        </div>
+    </div>
         @endauth
     </body>
 </html>

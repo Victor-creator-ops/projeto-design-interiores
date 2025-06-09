@@ -90,7 +90,7 @@ Este projeto integra conhecimentos adquiridos nas seguintes disciplinas:
 
 - Adriana Leite
 - Luidy Souza
-- Mateus Rezende
+- Matheus Rezende
 - Rafael Magalhães Ramos
 - Ricardo Horikawa
 - Victor Gabriel Feitosa

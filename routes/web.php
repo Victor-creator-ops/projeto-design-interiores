@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ProjectController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -31,10 +32,10 @@ Route::get('/tasks', function () {
     return view('tasks');
 })->name('tasks');
 
-Route::get('/projetos', function () {
-    return view('projetos');
-})->name('projetos');
-
 Route::get('/solicitacoes', function () {
     return view('solicitacoes');
 })->name('solicitacoes');
+// Criação de Projetos
+Route::get('/projetos/create', [ProjectController::class, 'create'])->name('projetos.create');
+Route::post('/projetos', [ProjectController::class, 'store'])->name('projetos.store');
+Route::get('/projetos/{id}', [ProjectController::class, 'show'])->name('projetos.show');

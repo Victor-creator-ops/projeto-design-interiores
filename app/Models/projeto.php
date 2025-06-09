@@ -11,7 +11,7 @@ class Projeto extends Model
 
     protected $fillable = [
         'name',
-        'cliente_id',
+        'user_id',
         'funcionario_id',
         'status',
         'estapa_atual',

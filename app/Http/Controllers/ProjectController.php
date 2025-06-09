@@ -16,7 +16,7 @@ class ProjectController extends Controller
     {
         $data = $request->validate([
             'name' => 'required|string|max:255',
-            'cliente_id' => 'required|integer|exists:users,id',
+            'user_id' => 'required|integer|exists:users,id',
             'funcionario_id' => 'required|integer|exists:employee,id',
             'status' => 'required|string',
             'estapa_atual' => 'required|string',

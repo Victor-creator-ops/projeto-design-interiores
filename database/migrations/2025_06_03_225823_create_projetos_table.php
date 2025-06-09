@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name');
-            $table->integer('cliente_id');
-            $table->foreign('cliente_id')->references('id')->on('users');
+            $table->integer('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->string('status');
             $table->integer('funcionario_id');
             $table->foreign('funcionario_id')->references('id')->on('employee');

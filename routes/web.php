@@ -28,6 +28,13 @@ Route::get('/welcome', function () {
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
+Route::get('/tasks', function () {
+    return view('tasks');
+})->name('tasks');
+
+Route::get('/solicitacoes', function () {
+    return view('solicitacoes');
+})->name('solicitacoes');
 // Criação de Projetos
 Route::get('/projetos/create', [ProjectController::class, 'create'])->name('projetos.create');
 Route::post('/projetos', [ProjectController::class, 'store'])->name('projetos.store');

@@ -123,8 +123,7 @@
     <header>
         <div class="logo">JESSICA’S DESIGN</div>
         <nav>
-            <a href="#">HOME</a>
-            <a href="#">LOGIN</a>
+            <a href="/">HOME</a>
             <a href="#">SOBRE NÓS</a>
         </nav>
     </header>
@@ -135,7 +134,7 @@
             <h2>Acesse sua conta agora mesmo</h2>
             <form method="POST" action="{{ route('login') }}">
                 @csrf
-                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" name="email" placeholder="email" required>
                 <input type="password" name="password" placeholder="Password" required>
                 {{-- <a href="{{ route('password.request') }}">Forgot Password?</a> --}}
                 <button type="submit">Login</button>

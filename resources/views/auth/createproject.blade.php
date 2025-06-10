@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Criar Novo Projeto</title>
     <link rel="stylesheet" href="/css/app.css"> <!-- ajuste conforme necessário -->
 </head>
+
 <body>
     <div class="container">
         <h1>Criar Novo Projeto</h1>
 
-        <form action="/projetos" method="POST">
+        <form method="POST" action="{{ route('projetos') }}">
             <input type="hidden" name="_token" value="AQUI_VAI_O_TOKEN_CSRF_MANUAL">
 
             <div>
@@ -33,11 +35,18 @@
             </div>
 
             <div>
-                <label for="estapa_atual">Etapa Atual</label>
+                <label for="etapa_atual">Etapa Atual</label>
                 <input type="text" name="estapa_atual" required>
             </div>
 
             <div>
                 <label for="etapa_anterior">Etapa Anterior</label>
                 <input type="text" name="etapa_anterior">
-            </div
+            </div>
+
+            <div>
+                <button type="button">submit</button>
+            </div>
+        </form>
+    </div>
+</body

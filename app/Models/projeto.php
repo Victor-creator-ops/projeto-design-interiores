@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Projeto extends Model
+class projeto extends Model
 {
     use HasFactory;
 
@@ -14,11 +14,10 @@ class Projeto extends Model
         'user_id',
         'funcionario_id',
         'status',
-        'estapa_atual',
+        'etapa_atual',
         'etapa_anterior',
         'etapa_posterior',
         'tempo_final_etapa',
-        'atualizacao',
     ];
 
     protected $table = 'projetos';

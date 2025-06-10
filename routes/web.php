@@ -36,6 +36,6 @@ Route::get('/solicitacoes', function () {
     return view('solicitacoes');
 })->name('solicitacoes');
 // Criação de Projetos
-Route::get('/projetos/create', [ProjectController::class, 'create'])->name('projetos.create');
-Route::post('/projetos', [ProjectController::class, 'store'])->name('projetos.store');
+Route::get('/projetos', [ProjectController::class, 'create'])->name('createproject');
+Route::post('/projetos', [ProjectController::class, 'store']);
 Route::get('/projetos/{id}', [ProjectController::class, 'show'])->name('projetos.show');

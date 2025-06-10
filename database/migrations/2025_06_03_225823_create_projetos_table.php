@@ -19,8 +19,8 @@ return new class extends Migration
             $table->foreign('user_id')->references('id')->on('users');
             $table->string('status');
             $table->integer('funcionario_id');
-            $table->foreign('funcionario_id')->references('id')->on('employee');
-            $table->string('estapa_atual');
+            $table->foreign('funcionario_id')->references('id')->on('employees');
+            $table->string('etapa_atual');
             $table->string('etapa_anterior');
             $table->string('etapa_posterior');
             $table->integer('tempo_final_etapa');
